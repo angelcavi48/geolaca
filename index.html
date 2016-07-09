@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 <head>
 <link href="css/jquery.mobile-1.4.5.css" rel="stylesheet" />
 <link href="css/jquery.mobile.theme-1.4.5.css" rel="stylesheet" />
@@ -12,7 +11,8 @@
 <script type="text/javascript">
 opciones={maximumage:500000, enableHighAccuracy:true,timeout:5000}:
 document.addEventListener("deviceready", function (){
-   $("#bntObtCoords").tap(function (){
+  alert("listo");
+   /*$("#bntObtCoords").tap(function (){
       if(navigator.geolacation){
         navigator.geolocation.getCurrentPosition(exito, falla, opciones);
         function exito(ubication){
@@ -25,7 +25,7 @@ document.addEventListener("deviceready", function (){
     }else{
            navigator.notification("su dispositivo no tiene soporte de geolocalizacion");
            }
-           });
+         });*/
            }, false);
            </script>
            </head>
@@ -36,7 +36,7 @@ document.addEventListener("deviceready", function (){
               </div>
               <div data-role="content">
                  <input type="text" id="txtLatitud" placeholder="Latitud" />
-                 <input type="text" id="txtLatitud" placeholder="Longitud" />
+                 <input type="text" id="txtLongitud" placeholder="Longitud" />
                  <input type="button" id="btnObtCoords" value= "Obtener cordenadas" />
                  </div>
                  <div data-role="footer">
